@@ -1,0 +1,1065 @@
+# Q1) Describe the main differences between the CSS Flexbox layout model and the CSS Grid layout model. When 
+would you choose to use one over the other?
+# Ans: 
+Flexbox 
+- It is designed for laying out items in a single direction, either horizontally (row) or vertically (column).
+-It is great for distributing space and aligning items within a container. You can easily center items or space
+ them out.
+-The layout adjusts based on the size of the items. It works well for smaller components or one-dimensional layouts
+(like navigation bars or card layouts).
+Grid
+-Grid can handle both rows and columns at the same time. You can create complex layouts by defining both dimensions.
+-It allows you to define specific areas of the layout where elements will go, which makes it easier to create larger
+ structured designs.
+-Grid is better for layouts that require precise control over positioning and sizing, such as web pages with overall 
+structure (like a photo gallery or a dashboard).
+-Use Flexbox when you want to align items in a single line or when you need a simple layout for components that stack
+ or line up. It's great for small-scale layouts.
+-Use Grid when you need more control over the overall layout, especially if your design requires rows and columns to be
+ combined together. It's ideal for larger, complex layouts
+
+ # Q2)Explain the role of the following key properties in the Flexbox layout mode.
+ # Ans:
+ justify-content : It controls how the grid columns are arranged along the inline axis (left to right) i.e. horizontally
+ align-item : This property allows us to set the default way of aligning each item in their respective grid cells along the block 
+direction (top to bottom).
+gap : The gap property in flexbox is used to set the spacing between flex items within a flex container. It specifies the size of 
+the gap between the rows and columns of flex items.
+flex-direction : The flex-direction property in CSS is used to define the direction in which flex items are placed in a flex container
+flex-wrap : The flex-wrap property in CSS is used to control whether the flex items should wrap or not within the flex container when 
+there is not enough space to accommodate them all in a single line. 
+
+# Q4)Write the code to center a div using CSS Flexbox
+#Code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centering a Div with Flexbox</title>
+<style>
+    .container {
+        display: flex;
+        height: 300px;
+        width: 300px;
+        margin-top: 20%;
+        margin-left: 30%;
+    }
+
+    .centered-div {
+        background-color: rgb(90, 234, 22);
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="centered-div">
+        This content is centered using Flexbox!
+    </div>
+</div>
+</body>
+</html>
+
+# Q5) A client of yours wants to add a pricing section on their website to showcase their newly introduced 
+premium plans.
+#Code : 
+html code :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Section</title>
+    <link rel="stylesheet" href="assnmt.css">
+</head>
+<body>
+    <div id="container">
+        <div class="box1">
+            <div class="card1">
+                <div class="header">
+                    <p class="h1">Free Plan</p>
+                </div>
+                <div  class="subhead">For Personal</div>
+                <div class="sign">$0</div>
+                <div class="content">
+                    <div class="c1">
+                        <div class="img1"><img src="checkmark.png"></div>
+                        <div class="data1">1 users</div>
+                    </div>
+                    <div class="c2">
+                        <div class="img2"><img src="checkmark.png"></div>
+                        <div class="data2">4 Web mails</div>
+                    </div>
+                    <div class="c3">
+                        <div class="img3"><img src="checkmark.png"></div>
+                        <div class="data3">Responsive Website</div>
+                    </div>
+                    <div class="c4">
+                        <div class="img4"><img src="checkmark.png"></div>
+                        <div class="data4">Free SSL</div>
+                    </div>
+                </div>
+                <div class="footer">Subscribe now</div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="card2">
+                <div class="header2">
+                    <p class="h2">Basic Plan</p>
+                </div>
+                <div  class="subhead2">For small business</div>
+                <div class="sign2">
+                    $29
+                </div>
+                <div class="content2">
+                    <div class="c1_2">
+                        <div class="img1"><img src="checkmarkw.png"></div>
+                        <div class="data1_2">4 users</div>
+                    </div>
+                    <div class="c2_2">
+                        <div class="img2"><img src="checkmarkw.png"></div>
+                        <div class="data2_2">10 Web mails</div>
+                    </div>
+                    <div class="c3_2">
+                        <div class="img3"><img src="checkmarkw.png"></div>
+                        <div class="data3_2">Responsive Website</div>
+                    </div>
+                    <div class="c4_2">
+                        <div class="img4"><img src="checkmarkw.png"></div>
+                        <div class="data4_2">Free SSL</div>
+                    </div>
+                </div>
+                <div class="footer_2">Subscribe now</div>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="card1">
+                <div class="header">
+                    <p class="h1">Pro Plan</p>
+                </div>
+                <div  class="subhead">For enterprise</div>
+                <div class="sign">
+                    $49
+                </div>
+                <div class="content">
+                    <div class="c1">
+                        <div class="img1"><img src="checkmark.png"></div>
+                        <div class="data1">Unlimited users</div>
+                    </div>
+                    <div class="c2">
+                        <div class="img2"><img src="checkmark.png"></div>
+                        <div class="data2">Unlimited Web mails</div>
+                    </div>
+                    <div class="c3">
+                        <div class="img3"><img src="checkmark.png"></div>
+                        <div class="data3">Responsive Website</div>
+                    </div>
+                    <div class="c4">
+                        <div class="img4"><img src="checkmark.png"></div>
+                        <div class="data4">Free SSL + SEO</div>
+                    </div>
+                </div>
+                <div class="footer">Subscribe now</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+css code :
+#container{
+    display: flex;
+    height: 470px;
+    width: 1100px;
+    border: 3px solid black;
+    margin-left: 13%;
+    margin-top: 10%;
+    background-color: aliceblue;
+}
+.box1{
+    height: 400px;
+    width: 300px;
+    border: 0px solid black;
+    margin-left: 55px;
+    margin-top: 33px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.card1{
+    border: 0px solid gray;
+    height: 350px;
+    width: 220px;
+    margin-top: 25px; 
+    margin-left: 36px;
+}
+.header{
+    display: flex;
+    /* flex-direction: row; */
+    /* align-items: ; */
+    border: 0px solid grey;
+    height: 40px;
+    width: 180px;
+}
+.h1{
+    font-family: "Nunito";
+    font-size: 30px;
+    font-style: normal;
+    line-height: 40px;
+    font-weight: 700;
+    margin-left: 5px;
+    margin-top: 0px;
+}
+.subhead{
+    display: flex;
+    flex: none;
+    border: 0px solid grey;
+    height: 20px;
+    width: 100px;
+    /* margin-top: 75px; */
+    margin-left: 8px;
+}
+.sign{
+    display: flex;
+    flex: none;
+    border: 0px solid gray;
+    height: 40px;
+    width: 60px;
+    margin-top: 20px;
+    font-size: 36px;
+    margin-left: 9px;
+}
+.content{
+    border: 0px solid gray;
+    height: 110px;
+    width: 190px;
+    margin-top: 20px;
+    margin-left: 14px;
+}
+.c1{
+    display: flex;
+    flex: none;
+    border: 0px solid gray;
+    height: 25px;
+}
+.img1{
+    border: 0px solid none;
+    height: 25px;
+    width: 25px;
+}
+.data1{
+    border: 0px solid gray;
+    height: 25px;
+    width: 120px;
+    margin-left: 5px;
+}
+.c2{
+    display: flex;
+    flex: none;
+    border: 0px solid gray;
+    height: 25px;
+}
+.img2{
+    border: 0px solid gray;
+    height: 25px;
+    width: 25px;
+}
+.data2{
+    border: 0px solid gray;
+    height: 25px;
+    width: 180px;
+    margin-left: 5px;
+}
+.c3{
+    display: flex;
+    flex: none;
+    border: 0px solid gray;
+    height: 25px;
+}
+.img3{
+    border: 0px solid gray;
+    height: 25px;
+    width: 25px;
+}
+.data3{
+    border: 0px solid gray;
+    height: 25px;
+    width: 160px;
+    margin-left: 5px;
+}
+.c4{
+    display: flex;
+    flex: none;
+    border: 0px solid gray;
+    height: 25px;
+}
+.img4{
+    border: 0px solid white;
+    height: 25px;
+    width: 25px;
+}
+.data4{
+    border: 0px solid gray;
+    height: 25px;
+    width: 160px;
+    margin-left: 5px;
+}
+.footer{
+    display: flex;
+    flex: none;
+    border: 1px solid gray;
+    margin-top: 62px;
+    margin-left: 50px;
+    height: 30px;
+    width: 115px;
+    border-radius: 15px;
+    align-items: center;
+    padding-left: 15px;
+    color: white;
+    background-color: black;
+}
+.box2{
+    height: 400px;
+    width: 300px;
+    border: 0px solid #202842;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+    margin-left: 35px;
+    margin-top: 33px;
+    /* margin-right: 10px; */
+    border-radius: 10px;
+    background-color: #202842;
+}
+.box2 *{
+    color: whitesmoke;
+}
+.card2{
+    border: 0px solid gray;
+    height: 350px;
+    width: 220px;
+    margin-top: 25px; 
+    margin-left: 36px;
+}
+.header2{
+    display: flex;
+    /* flex-direction: row; */
+    /* align-items: ; */
+    border: 0px solid grey;
+    height: 40px;
+    width: 180px;
+}
+.h2{
+    font-family: "Nunito";
+    font-size: 30px;
+    font-style: normal;
+    line-height: 40px;
+    font-weight: 700;
+    margin-left: 5px;
+    margin-top: 0px;
+}
+.subhead2{
+    display: flex;
+    flex: none;
+    border: 0px solid grey;
+    height: 20px;
+    width: 150px;
+    /* margin-top: 75px; */
+    margin-left: 8px;
+}
+.sign2{
+    display: flex;
+    flex: none;
+    border: 0px solid gray;
+    height: 40px;
+    width: 60px;
+
+    margin-left: 9px;
+    margin-top: 20px;
+    font-size: 36px;
+}
+.content2{
+    border: 0px solid gray;
+    height: 110px;
+    width: 190px;
+    margin-top: 20px;
+    margin-left: 11px;
+}
+.c1_2{
+    display: flex;
+    flex: none;
+    border: 0px solid gray;
+    height: 25px;
+}
+.img1{
+    border: 0px solid gray;
+    height: 25px;
+    width: 25px;
+}
+.data1_2{
+    border: 0px solid gray;
+    height: 25px;
+    width: 100px;
+    margin-left: 5px;
+}
+.c2_2{
+    display: flex;
+    flex: none;
+    border: 0px solid gray;
+    height: 25px;
+}
+.img2{
+    border: 0px solid gray;
+    height: 25px;
+    width: 25px;
+}
+.data2_2{
+    border: 0px solid gray;
+    height: 25px;
+    width: 100px;
+    margin-left: 5px;
+}
+.c3_2{
+    display: flex;
+    flex: none;
+    border: 0px solid gray;
+    height: 25px;
+}
+.img3{
+    border: 0px solid gray;
+    height: 25px;
+    width: 25px;
+}
+.data3_2{
+    border: 0px solid gray;
+    height: 25px;
+    width: 160px;
+    margin-left: 5px;
+}
+.c4_2{
+    display: flex;
+    flex: none;
+    border: 0px solid gray;
+    height: 25px;
+}
+.img4{
+    border: 0px solid gray;
+    height: 25px;
+    width: 25px;
+}
+.data4_2{
+    border: 0px solid gray;
+    height: 25px;
+    width: 160px;
+    margin-left: 5px;
+}
+.footer_2{
+    display: flex;
+    flex: none;
+    border: 1px solid gray;
+    margin-top: 62px;
+    margin-left: 50px;
+    height: 30px;
+    width: 115px;
+    border-radius: 15px;
+    align-items: center;
+    padding-left: 15px;
+    background-color: white;
+    color: black;
+}
+.box3{
+    height: 400px;
+    width: 300px;
+    border: 0px solid black;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+    margin-left: 35px;
+    margin-top: 33px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+# Q6) Build a clone of the IRCTC Ticket booking page.
+#Code :
+html code :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="irctc.css">
+</head>
+<body>
+    <div id="container">
+        <div class="box1">
+            <div id="head">
+                <div class="logobox">
+                    <img src="Logo.png"/>
+                </div>
+                <div class="navbox1">
+                    <div class="hone">
+                        <div class="one">Ask Disha</div>
+                        <div class="two">Contact us</div>
+                        <div class="three">Alerts</div>
+                    </div>
+                    <div class="htwo">
+                        <div class="btn1">Login</div>
+                        <div class="btn2">Register</div>
+                        <div class="btn3">Agent Login</div>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <div class="mt">Indian Railways</div>
+                <div class="st">
+                    <div class="t1">Safety</div>
+                    <div class="t2">Security</div>
+                    <div class="t3">Punctuality</div>
+                </div>
+            </div>
+            <div class="sn">
+                <div id="f1">
+                    <div class="png1">
+                        <img src="bt.png">
+                    </div>
+                    <div class="tb1">BOOK Ticket</div>
+                </div>
+                <div id="f2">
+                    <div class="png2">
+                        <img src="tick.png">
+                    </div>
+                    <div class="tb2">PNR Status</div>
+                </div>
+                <div id="f3">
+                    <div class="png3">
+                        <img src="cv.png">
+                    </div>
+                    <div class="tb3">Charts / Vacancy</div>
+                </div>
+            </div>
+            <div class="rect1">
+                <div class="bx1">
+                    <div class="lay1">
+                        <div class="bl">From</div>
+                             <div class="br">
+                                <img src="nav1.png">
+                             </div>
+                    </div>
+                    <div class="lay2">
+                        <div class="bl_2">
+                            <img src="fp.png">
+                        </div>
+                        <div class="br_2">Bangalore</div>
+                    </div>
+                    <div class="lay3">
+                        <div class="lb">KSR - Bangalore</div>
+                    </div>
+                </div>
+                <div class="bx2">
+                    <div class="mb">
+                        <img src="exc.png">
+                    </div>
+                </div>
+                <div class="bx3">
+                    <div class="lay11">
+                        <div class="bll">From</div>
+                             <div class="brr">
+                                <img src="nav1.png">
+                             </div>
+                    </div>
+                    <div class="lay22">
+                        <div class="bl_22">
+                            <img src="tp.png">
+                        </div>
+                        <div class="br_22">Kasaragod</div>
+                    </div>
+                    <div class="lay33">
+                        <div class="lbb">KSD - Kasaragod</div>
+                    </div>
+                </div>
+            </div>
+            <div class="rect2">
+                <img src="rbx.png">
+             </div>
+            <div class="foot">
+                <div class="txt">Search Train</div>
+                <div class="img">
+                    <img src="arrow.png">
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <img class="tpic" src="trainpic.png">
+        </div>
+    </div>
+</body>
+</html>
+
+css code:
+#container{
+    display: flex;
+    border: 2px groove black;
+    height: 700px;
+    width: 1000px;
+    margin-left: 20%;
+    margin-top: 6%;
+}
+.box1{
+    /* display: flex; */
+    border: 1px solid black;
+    height: 700px;
+    width: 600px;
+}
+#head{
+    display: flex;
+    border: 1px solid gray;
+    height: 120px;
+    width: 600px;
+}
+.logobox{
+    border: 0px solid black;
+    height: 80px;
+    width: 160px;
+    margin-left: 30px;
+    margin-top: 23px;
+}
+img{
+    height: 80px;
+    width: 158px;
+}
+.navbox1{
+    /* display: flex; */
+    border: 0px solid black;
+    height: 60px;
+    width: 270px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.hone{
+    display: flex;
+    border: 0px solid black;
+    height: 20px;
+    width: 268px;
+}
+.one{
+    border: 0px solid black;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+}
+.two{
+    border: 0px solid black;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+}
+.three{
+    border: 0px solid black;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+}
+.htwo{
+    display: flex;
+    border: 0px solid black;
+    height: 38px;
+    width: 268px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.btn1{
+    border: 1px solid orange;
+    height: 30px;
+    width: 60px;
+    background-color: orange;
+    color: white;
+    margin-top: 3px;
+    margin-left: 6px;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+}
+.btn2{
+    border: 1px solid gray;
+    height: 30px;
+    width: 70px;
+    margin-top: 3px;
+    margin-left: 27px;
+    text-align: center;
+    align-content: center;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.btn3{
+    border: 1px solid gray;
+    height: 30px;
+    width: 75px;
+    margin-top: 4px;
+    margin-left: 20px;
+    text-align: center;
+    align-content: center;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.title{
+    border: 0px solid gray;
+    height: 80px;
+    width: 300px;
+    margin-top: 35px;
+    margin-left: 50px;
+}
+.mt{
+    border: 0px solid gray;
+    height: 40px;
+    width: 300px;
+    font-family: 'bold';
+    font-weight: 800;
+    font-size: 35px;
+}
+.st{
+    display: flex;
+    border: 0px solid gray;
+    height: 30px;
+    width: 300px;
+}
+.t1{
+    border: 0px solid gray;
+    height: auto;
+    width: 90px;
+    font-family: "inter";
+    font-size: 20px;
+    font-weight: 1000;
+    /* text-align: center; */
+    margin-top: 8px;
+    color: #01BB0A;
+}
+.t2{
+    border: 0px solid gray;
+    height: auto;
+    width: 90px;
+    font-family: "inter";
+    font-size: 20px;
+    font-weight: 1000;
+    /* text-align: center; */
+    margin-top: 8px;
+    margin-left: 5px;
+    color:orange;
+}
+.t3{
+    border: 0px solid gray;
+    height: auto;
+    width: 99px;
+    font-family: "inter";
+    font-size: 20px;
+    font-weight: 1000;
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 5px;
+    color: blueviolet;
+}
+.sn{
+    display: flex;
+    border: 0px solid #213D77;
+    height: 30px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#f1{
+    display: flex;
+    border: 0px solid gray;
+    width: 120px;
+    background-color: #213D77;
+    border-radius: 5px;
+}
+.png1{
+    border: 0px solid gray;
+    height: 12px;
+    width: 13px;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+.png1 img{
+    height: 12px;
+    width: 13px;
+}
+.tb1{
+    border: 0px solid gray;
+    height: 19px;
+    width: 82px;
+    margin-top: 7px;
+    margin-left: 7px;
+    font-family: 'inter';
+    font-size: 13px;
+    color: white;
+}
+#f2{
+    display: flex;
+    border: 1px solid gray;
+    width: 140px;
+    margin-left: 22px;
+    border-radius: 5px;
+}
+.png2{
+    border: 0px solid gray;
+    height: 20px;
+    width: 20px;
+    /* margin: 4px; */
+    margin-top: 6px;
+    margin-left: 7px;
+}
+.png2 img{
+    height: 12px;
+    width: 12px;
+}
+.tb2{
+    border: 0px solid gray;
+    height: 19px;
+    width: 100px;
+    margin-left: 7px;
+    margin-top: 6px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+#f3{
+    display: flex;
+    border: 1px solid gray;
+    width: 190px;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+.png3{
+    border: 0px solid gray;
+    height: 14px;
+    width: 15px;
+    margin-top: 6px;
+    margin-left: 7px;
+}
+.png3 img{
+    height: 14px;
+    width: 15px;
+}
+.tb3{
+    border: 0px solid gray;
+    height: 19px;
+    width: 150px;
+    margin-top: 5px;
+    margin-left: 8px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.rect1{
+    display: flex;
+    border: 0.5px solid gray;
+    height: 85px;
+    width: 500px;
+    margin-top: 35px;
+    margin-left: 50px;
+}
+.bx1{
+    border: 0px solid gray;
+    width: 180px;
+    margin-top: 4px;
+    margin-left: 7px;
+}
+.lay1{
+    display: flex;
+    border: 0px solid gray;
+    height: 22px;
+}
+.bl{
+    border: 0px solid gray;
+    height: 20px;
+    width: 40px;
+    margin-left: 40px;
+    font-size: 15px;
+}
+.br{
+    border: 0px solid gray;
+    height: 12px;
+    width: 12px;
+    margin-top: 1px;
+    margin-left: 2px;
+}
+.br img{
+    height: 9px;
+    width: 11px;
+}
+.lay2{
+    display: flex;
+    border: 0px solid gray;
+    height: 35px;
+}
+.bl_2{
+    border: 0px solid gray;
+    height: 25px;
+    width: 25px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+.bl_2 img{
+    height: 25px;
+    width: 25px;
+}
+.br_2{
+    border: 0px solid gray;
+    height: 25px;
+    width: 110px;
+    margin-top: 4px;
+    margin-left: 4px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.lay3{
+    border: 0px solid gray;
+    height: 22px;
+}
+.lb{
+    border: 0px solid gray;
+    height: 15px;
+    width: 110px;
+    margin-left: 35px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.bx2{
+    border: 0px solid gray;
+    width: 100px;
+}
+.mb{
+    border: 1px solid gray;
+    height: 35px;
+    width: 35px;
+    margin-left: 30px;
+    margin-top: 25px;
+    border-radius: 20px;
+}
+.mb img{
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+}
+.bx3{
+    border: 0px solid gray;
+    width: 200px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+.lay11{
+    display: flex;
+    border: 0px solid gray;
+    height: 22px;
+}
+.bll{
+    border: 0px solid gray;
+    height: 20px;
+    width: 40px;
+    margin-left: 40px;
+}
+.brr{
+    border: 0px solid gray;
+    height: 12px;
+    width: 12px;
+    margin-top: 2px;
+    margin-left: 3px;
+}
+.brr img{
+    height: 10px;
+    width: 10px;
+}
+.lay22{
+    display: flex;
+    border: 0px solid gray;
+    height: 35px;
+}
+.bl_22{
+    border: 0px solid gray;
+    height: 25px;
+    width: 25px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+.bl_22 img{
+    height: 25px;
+    width: 25px;
+}
+.br_22{
+    border: 0px solid gray;
+    height: 25px;
+    width: 110px;
+    margin-top: 4px;
+    margin-left: 4px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.lay33{
+    border: 0px solid gray;
+    height: 22px;
+}
+.lbb{
+    border: 0px solid gray;
+    height: 15px;
+    width: 110px;
+    margin-left: 35px;
+    font-size: 13px;
+}
+.rect2{
+    display: flex;
+    border: 1px solid gray;
+    height: 90px;
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.rect2 img{
+    width: 500px;
+}
+.foot{
+    display: flex;
+    border: 1px solid #01BB0A ;
+    height: 40px;
+    width: 500px;
+    margin-top: 35px;
+    margin-left: 50px;
+    background-color: #01BB0A;
+}
+.box2{
+    border: 0px solid black;
+    height: 700px;
+    width: 500px;
+}
+.txt{
+    border: 0px solid gray;
+    height: 20px;
+    width: 110px;
+    margin-top: 10px;
+    margin-left: 180px;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    background-color: #01BB0A;
+}
+.img{
+    border: 0px solid gray;
+    height: 20px;
+    width: 25px;
+    margin-top: 10px;
+    margin-left: 0px;
+    background-color: #01BB0A;
+}
+.img  img{
+    height: 20px;
+    width: 25px;
+}
+.tpic{
+    height: 700px;
+    width: 390px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#all the images are in the images folder for the question 4 and 5.
